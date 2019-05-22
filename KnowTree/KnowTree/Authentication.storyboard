@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WnZ-Zv-R0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="klZ-ss-yXR">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="snn-WV-9iB" customClass="LoginViewController" customModule="KnowTree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fq0-93-Bd2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfD-64-0Rv">
+                                <rect key="frame" x="188" y="433" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginPressWithSender:" destination="snn-WV-9iB" eventType="touchUpInside" id="g2Q-LR-N84"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FfD-64-0Rv" firstAttribute="centerX" secondItem="fq0-93-Bd2" secondAttribute="centerX" id="d2F-Gv-yBA"/>
+                            <constraint firstItem="FfD-64-0Rv" firstAttribute="centerY" secondItem="fq0-93-Bd2" secondAttribute="centerY" id="y6V-0s-dBK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0U5-ot-LHT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8to-pe-fwy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pLi-fw-zfM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868.11594202898561" y="-133.25892857142856"/>
+        </scene>
+        <!--Nav Authentication-->
+        <scene sceneID="OT2-jJ-Ew6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WnZ-Zv-R0r" customClass="NavAuthentication" customModule="KnowTree" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D9r-Gx-ewS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="snn-WV-9iB" kind="relationship" relationship="rootViewController" id="5u2-cP-LLm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F33-4e-9vn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42.028985507246382" y="-133.25892857142856"/>
+        </scene>
+    </scenes>
+</document>

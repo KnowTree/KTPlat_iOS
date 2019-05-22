@@ -21,6 +21,10 @@
 		2FE9F1DF221C5A1B00CCEA7C /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE9F1DE221C5A1B00CCEA7C /* DeviceUtils.swift */; };
 		40135027D97A68AF1BCC5760 /* Pods_KnowTreeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1E2564D958422F490E6805 /* Pods_KnowTreeTests.framework */; };
 		B672FF44BEB06A4DB75209C2 /* Pods_KnowTreeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F222F7F1BA34F9233FABC6 /* Pods_KnowTreeUITests.framework */; };
+		D538908D2294F006008AA7F4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D538908C2294F006008AA7F4 /* Utils.swift */; };
+		D53890902294F15F008AA7F4 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D538908F2294F15F008AA7F4 /* Authentication.storyboard */; };
+		D53890922294F37F008AA7F4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53890912294F37F008AA7F4 /* Constant.swift */; };
+		D53890942294F463008AA7F4 /* NavAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53890932294F463008AA7F4 /* NavAuthentication.swift */; };
 		D5A7DD9922584B120080C228 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A7DD9022584B120080C228 /* SettingViewController.swift */; };
 		D5A7DD9A22584B120080C228 /* KtMindMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A7DD9222584B120080C228 /* KtMindMapViewController.swift */; };
 		D5A7DD9B22584B120080C228 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A7DD9422584B120080C228 /* LoginViewController.swift */; };
@@ -73,6 +77,10 @@
 		A4F222F7F1BA34F9233FABC6 /* Pods_KnowTreeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnowTreeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C148430B02D341A6AA670010 /* Pods-KnowTreeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowTreeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowTreeTests/Pods-KnowTreeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB1E2564D958422F490E6805 /* Pods_KnowTreeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnowTreeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D538908C2294F006008AA7F4 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D538908F2294F15F008AA7F4 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		D53890912294F37F008AA7F4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D53890932294F463008AA7F4 /* NavAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavAuthentication.swift; sourceTree = "<group>"; };
 		D59E154B224889DF00F21D10 /* KnowTree-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KnowTree-Prefix.pch"; sourceTree = "<group>"; };
 		D5A7DD9022584B120080C228 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		D5A7DD9222584B120080C228 /* KtMindMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KtMindMapViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +152,7 @@
 		2FE9F19F221710B200CCEA7C = {
 			isa = PBXGroup;
 			children = (
+				D53890912294F37F008AA7F4 /* Constant.swift */,
 				D59E154B224889DF00F21D10 /* KnowTree-Prefix.pch */,
 				2FE9F1AA221710B200CCEA7C /* KnowTree */,
 				2FE9F1BF221710B200CCEA7C /* KnowTreeTests */,
@@ -176,6 +185,7 @@
 				2FE9F1AB221710B200CCEA7C /* AppDelegate.swift */,
 				2FE9F1AD221710B200CCEA7C /* ViewController.swift */,
 				2FE9F1AF221710B200CCEA7C /* Main.storyboard */,
+				D538908F2294F15F008AA7F4 /* Authentication.storyboard */,
 				2FE9F1B2221710B200CCEA7C /* Assets.xcassets */,
 				2FE9F1B4221710B200CCEA7C /* LaunchScreen.storyboard */,
 				2FE9F1B7221710B200CCEA7C /* Info.plist */,
@@ -213,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				2FE9F1DE221C5A1B00CCEA7C /* DeviceUtils.swift */,
+				D538908C2294F006008AA7F4 /* Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -268,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				D5A7DD9422584B120080C228 /* LoginViewController.swift */,
+				D53890932294F463008AA7F4 /* NavAuthentication.swift */,
 			);
 			path = KtLogin;
 			sourceTree = "<group>";
@@ -402,6 +414,7 @@
 				2FE9F1B3221710B200CCEA7C /* Assets.xcassets in Resources */,
 				2FE9F1B1221710B200CCEA7C /* Main.storyboard in Resources */,
 				D5A7DDA8225862F80080C228 /* ListGroupTableViewCell.xib in Resources */,
+				D53890902294F15F008AA7F4 /* Authentication.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +501,10 @@
 				2FDF0C25221EE96E00CF389E /* KtpWebService.swift in Sources */,
 				D5A7DD9C22584B120080C228 /* TabBarController.swift in Sources */,
 				2FE9F1AE221710B200CCEA7C /* ViewController.swift in Sources */,
+				D53890942294F463008AA7F4 /* NavAuthentication.swift in Sources */,
+				D538908D2294F006008AA7F4 /* Utils.swift in Sources */,
 				2FE9F1DF221C5A1B00CCEA7C /* DeviceUtils.swift in Sources */,
+				D53890922294F37F008AA7F4 /* Constant.swift in Sources */,
 				2FD63EDB22257EC80008E16E /* UserAuthDto.swift in Sources */,
 				D5A7DD9A22584B120080C228 /* KtMindMapViewController.swift in Sources */,
 				2F477E092253A73900A124F7 /* ExtentionUViewController.swift in Sources */,

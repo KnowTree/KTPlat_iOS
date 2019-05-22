@@ -19,6 +19,10 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func loginPress(sender:UIButton){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+        appDelegate.gotoMainTab();
+    }
     
 }
 

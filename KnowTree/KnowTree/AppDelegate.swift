@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,30 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var navigationController: UINavigationController?;
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        
-        let arrVC : NSMutableArray = NSMutableArray.init();
-        
-        let minMapVC = DeviceUtils.getViewController(className: KtMindMapViewController.className, storyboard: "Main");
-        let groupVC = DeviceUtils.getViewController(className: ListGroupViewController.className, storyboard: "Main");
-        let settingVC = DeviceUtils.getViewController(className: SettingViewController.className, storyboard: "Main");
-        
-        arrVC.add(minMapVC);
-        arrVC.add(groupVC);
-        arrVC.add(settingVC);
-        self.tabBarController = UITabBarController.init();
-        self.tabBarController?.viewControllers = arrVC as? [UIViewController];
-        self.navigationController = UINavigationController.init(rootViewController: self.tabBarController!);
-        if (self.navigationController != nil) {
-            self.navigationController?.navigationBar.isHidden = true;
-            self.navigationController?.navigationBar.tintColor = UIColor.white;
-            self.navigationController?.navigationBar.barTintColor = UIColor.init(red: 0.169, green: 0.53, blue: 0.949, alpha: 1.0);
-            self.navigationController?.navigationBar.isTranslucent = false;
-            self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white];
-            
-            self.window?.rootViewController = self.navigationController;
-        }
-        
+        gotoLogin();
         return true
     }
 
@@ -62,6 +40,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    func gotoMainTab() -> Void {
+        let mainTabbar = Utils.getViewController(className: TabBarController.className, storyboard:KTConstants.mainSB);
+        self.window?.rootViewController = mainTabbar;
+    }
+    func gotoLogin() -> Void {
+        let loginVC = Utils.getViewController(className: LoginViewController.className, storyboard:KTConstants.AuthenticationSB);
+        let navigation = NavAuthentication.init(rootViewController: loginVC);
+        self.window?.rootViewController = navigation;
     }
 
 
