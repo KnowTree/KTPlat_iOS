@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B6B0A7886A56B0CBA5BE8D8 /* Pods_KnowTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B929859BDF07AFBA7F7E2D /* Pods_KnowTree.framework */; };
+		2F477E092253A73900A124F7 /* ExtentionUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F477E082253A73900A124F7 /* ExtentionUViewController.swift */; };
+		2FD63EDB22257EC80008E16E /* UserAuthDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD63EDA22257EC80008E16E /* UserAuthDto.swift */; };
+		2FDF0C25221EE96E00CF389E /* KtpWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF0C24221EE96E00CF389E /* KtpWebService.swift */; };
+		2FE9F1AC221710B200CCEA7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE9F1AB221710B200CCEA7C /* AppDelegate.swift */; };
+		2FE9F1AE221710B200CCEA7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE9F1AD221710B200CCEA7C /* ViewController.swift */; };
+		2FE9F1B1221710B200CCEA7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE9F1AF221710B200CCEA7C /* Main.storyboard */; };
+		2FE9F1B3221710B200CCEA7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE9F1B2221710B200CCEA7C /* Assets.xcassets */; };
+		2FE9F1B6221710B200CCEA7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE9F1B4221710B200CCEA7C /* LaunchScreen.storyboard */; };
+		2FE9F1C1221710B200CCEA7C /* KnowTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE9F1C0221710B200CCEA7C /* KnowTreeTests.swift */; };
+		2FE9F1CC221710B200CCEA7C /* KnowTreeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE9F1CB221710B200CCEA7C /* KnowTreeUITests.swift */; };
+		2FE9F1DF221C5A1B00CCEA7C /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE9F1DE221C5A1B00CCEA7C /* DeviceUtils.swift */; };
+		40135027D97A68AF1BCC5760 /* Pods_KnowTreeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1E2564D958422F490E6805 /* Pods_KnowTreeTests.framework */; };
+		B672FF44BEB06A4DB75209C2 /* Pods_KnowTreeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F222F7F1BA34F9233FABC6 /* Pods_KnowTreeUITests.framework */; };
+		D5A7DD9922584B120080C228 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A7DD9022584B120080C228 /* SettingViewController.swift */; };
+		D5A7DD9A22584B120080C228 /* KtMindMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A7DD9222584B120080C228 /* KtMindMapViewController.swift */; };
+		D5A7DD9B22584B120080C228 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A7DD9422584B120080C228 /* LoginViewController.swift */; };
+		D5A7DD9C22584B120080C228 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A7DD9622584B120080C228 /* TabBarController.swift */; };
+		D5A7DD9D22584B120080C228 /* ListGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A7DD9822584B120080C228 /* ListGroupViewController.swift */; };
+		D5A7DDA022584B7A0080C228 /* ListGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A7DD9E22584B7A0080C228 /* ListGroupTableViewCell.swift */; };
+		D5A7DDA8225862F80080C228 /* ListGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A7DDA7225862F80080C228 /* ListGroupTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FE9F1BD221710B200CCEA7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FE9F1A0221710B200CCEA7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FE9F1A7221710B200CCEA7C;
+			remoteInfo = KnowTree;
+		};
+		2FE9F1C8221710B200CCEA7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FE9F1A0221710B200CCEA7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FE9F1A7221710B200CCEA7C;
+			remoteInfo = KnowTree;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00B929859BDF07AFBA7F7E2D /* Pods_KnowTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnowTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A30773C85632D499FCEAAE /* Pods-KnowTreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowTreeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowTreeTests/Pods-KnowTreeTests.release.xcconfig"; sourceTree = "<group>"; };
+		2F477E082253A73900A124F7 /* ExtentionUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionUViewController.swift; sourceTree = "<group>"; };
+		2FD63EDA22257EC80008E16E /* UserAuthDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthDto.swift; sourceTree = "<group>"; };
+		2FDF0C24221EE96E00CF389E /* KtpWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KtpWebService.swift; sourceTree = "<group>"; };
+		2FE9F1A8221710B200CCEA7C /* KnowTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FE9F1AB221710B200CCEA7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FE9F1AD221710B200CCEA7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2FE9F1B0221710B200CCEA7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FE9F1B2221710B200CCEA7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FE9F1B5221710B200CCEA7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FE9F1B7221710B200CCEA7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FE9F1BC221710B200CCEA7C /* KnowTreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowTreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FE9F1C0221710B200CCEA7C /* KnowTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowTreeTests.swift; sourceTree = "<group>"; };
+		2FE9F1C2221710B200CCEA7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FE9F1C7221710B200CCEA7C /* KnowTreeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowTreeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FE9F1CB221710B200CCEA7C /* KnowTreeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowTreeUITests.swift; sourceTree = "<group>"; };
+		2FE9F1CD221710B200CCEA7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FE9F1DE221C5A1B00CCEA7C /* DeviceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtils.swift; sourceTree = "<group>"; };
+		388524C767491F116CE53202 /* Pods-KnowTree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowTree.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowTree/Pods-KnowTree.debug.xcconfig"; sourceTree = "<group>"; };
+		59FB098BB51F77A35E55D832 /* Pods-KnowTree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowTree.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowTree/Pods-KnowTree.release.xcconfig"; sourceTree = "<group>"; };
+		79A5619AC43C938AAE30D3A7 /* Pods-KnowTreeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowTreeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowTreeUITests/Pods-KnowTreeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A4F222F7F1BA34F9233FABC6 /* Pods_KnowTreeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnowTreeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C148430B02D341A6AA670010 /* Pods-KnowTreeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowTreeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowTreeTests/Pods-KnowTreeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB1E2564D958422F490E6805 /* Pods_KnowTreeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnowTreeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D59E154B224889DF00F21D10 /* KnowTree-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KnowTree-Prefix.pch"; sourceTree = "<group>"; };
+		D5A7DD9022584B120080C228 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		D5A7DD9222584B120080C228 /* KtMindMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KtMindMapViewController.swift; sourceTree = "<group>"; };
+		D5A7DD9422584B120080C228 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D5A7DD9622584B120080C228 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D5A7DD9822584B120080C228 /* ListGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListGroupViewController.swift; sourceTree = "<group>"; };
+		D5A7DD9E22584B7A0080C228 /* ListGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGroupTableViewCell.swift; sourceTree = "<group>"; };
+		D5A7DDA7225862F80080C228 /* ListGroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListGroupTableViewCell.xib; sourceTree = "<group>"; };
+		F1CA1AFB290043C0732E3E03 /* Pods-KnowTreeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowTreeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowTreeUITests/Pods-KnowTreeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FE9F1A5221710B200CCEA7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6B0A7886A56B0CBA5BE8D8 /* Pods_KnowTree.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE9F1B9221710B200CCEA7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40135027D97A68AF1BCC5760 /* Pods_KnowTreeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE9F1C4221710B200CCEA7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B672FF44BEB06A4DB75209C2 /* Pods_KnowTreeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		209EB3D52BBF3E92D4C1A1CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				388524C767491F116CE53202 /* Pods-KnowTree.debug.xcconfig */,
+				59FB098BB51F77A35E55D832 /* Pods-KnowTree.release.xcconfig */,
+				C148430B02D341A6AA670010 /* Pods-KnowTreeTests.debug.xcconfig */,
+				11A30773C85632D499FCEAAE /* Pods-KnowTreeTests.release.xcconfig */,
+				F1CA1AFB290043C0732E3E03 /* Pods-KnowTreeUITests.debug.xcconfig */,
+				79A5619AC43C938AAE30D3A7 /* Pods-KnowTreeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2F477E072253A6FB00A124F7 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				2F477E082253A73900A124F7 /* ExtentionUViewController.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		2FDF0C23221EE7A500CF389E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2FDF0C24221EE96E00CF389E /* KtpWebService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2FE9F19F221710B200CCEA7C = {
+			isa = PBXGroup;
+			children = (
+				D59E154B224889DF00F21D10 /* KnowTree-Prefix.pch */,
+				2FE9F1AA221710B200CCEA7C /* KnowTree */,
+				2FE9F1BF221710B200CCEA7C /* KnowTreeTests */,
+				2FE9F1CA221710B200CCEA7C /* KnowTreeUITests */,
+				2FE9F1A9221710B200CCEA7C /* Products */,
+				209EB3D52BBF3E92D4C1A1CF /* Pods */,
+				887B9922D5B91F65CBB5FC1C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2FE9F1A9221710B200CCEA7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FE9F1A8221710B200CCEA7C /* KnowTree.app */,
+				2FE9F1BC221710B200CCEA7C /* KnowTreeTests.xctest */,
+				2FE9F1C7221710B200CCEA7C /* KnowTreeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FE9F1AA221710B200CCEA7C /* KnowTree */ = {
+			isa = PBXGroup;
+			children = (
+				D5A7DD8C22584ACF0080C228 /* View */,
+				2F477E072253A6FB00A124F7 /* Extention */,
+				2FDF0C23221EE7A500CF389E /* Service */,
+				2FE9F1DD221C5A0800CCEA7C /* Utils */,
+				2FE9F1D9221C599900CCEA7C /* Model */,
+				D5A7DD8E22584B120080C228 /* ViewController */,
+				2FE9F1AB221710B200CCEA7C /* AppDelegate.swift */,
+				2FE9F1AD221710B200CCEA7C /* ViewController.swift */,
+				2FE9F1AF221710B200CCEA7C /* Main.storyboard */,
+				2FE9F1B2221710B200CCEA7C /* Assets.xcassets */,
+				2FE9F1B4221710B200CCEA7C /* LaunchScreen.storyboard */,
+				2FE9F1B7221710B200CCEA7C /* Info.plist */,
+			);
+			path = KnowTree;
+			sourceTree = "<group>";
+		};
+		2FE9F1BF221710B200CCEA7C /* KnowTreeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FE9F1C0221710B200CCEA7C /* KnowTreeTests.swift */,
+				2FE9F1C2221710B200CCEA7C /* Info.plist */,
+			);
+			path = KnowTreeTests;
+			sourceTree = "<group>";
+		};
+		2FE9F1CA221710B200CCEA7C /* KnowTreeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2FE9F1CB221710B200CCEA7C /* KnowTreeUITests.swift */,
+				2FE9F1CD221710B200CCEA7C /* Info.plist */,
+			);
+			path = KnowTreeUITests;
+			sourceTree = "<group>";
+		};
+		2FE9F1D9221C599900CCEA7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FD63EDA22257EC80008E16E /* UserAuthDto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FE9F1DD221C5A0800CCEA7C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2FE9F1DE221C5A1B00CCEA7C /* DeviceUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		887B9922D5B91F65CBB5FC1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B929859BDF07AFBA7F7E2D /* Pods_KnowTree.framework */,
+				CB1E2564D958422F490E6805 /* Pods_KnowTreeTests.framework */,
+				A4F222F7F1BA34F9233FABC6 /* Pods_KnowTreeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5A7DD8C22584ACF0080C228 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D5A7DD9E22584B7A0080C228 /* ListGroupTableViewCell.swift */,
+				D5A7DDA7225862F80080C228 /* ListGroupTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D5A7DD8E22584B120080C228 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D5A7DD8F22584B120080C228 /* KtSetting */,
+				D5A7DD9122584B120080C228 /* KtMindMap */,
+				D5A7DD9322584B120080C228 /* KtLogin */,
+				D5A7DD9522584B120080C228 /* KtMainView */,
+				D5A7DD9722584B120080C228 /* KtGroup */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D5A7DD8F22584B120080C228 /* KtSetting */ = {
+			isa = PBXGroup;
+			children = (
+				D5A7DD9022584B120080C228 /* SettingViewController.swift */,
+			);
+			path = KtSetting;
+			sourceTree = "<group>";
+		};
+		D5A7DD9122584B120080C228 /* KtMindMap */ = {
+			isa = PBXGroup;
+			children = (
+				D5A7DD9222584B120080C228 /* KtMindMapViewController.swift */,
+			);
+			path = KtMindMap;
+			sourceTree = "<group>";
+		};
+		D5A7DD9322584B120080C228 /* KtLogin */ = {
+			isa = PBXGroup;
+			children = (
+				D5A7DD9422584B120080C228 /* LoginViewController.swift */,
+			);
+			path = KtLogin;
+			sourceTree = "<group>";
+		};
+		D5A7DD9522584B120080C228 /* KtMainView */ = {
+			isa = PBXGroup;
+			children = (
+				D5A7DD9622584B120080C228 /* TabBarController.swift */,
+			);
+			path = KtMainView;
+			sourceTree = "<group>";
+		};
+		D5A7DD9722584B120080C228 /* KtGroup */ = {
+			isa = PBXGroup;
+			children = (
+				D5A7DD9822584B120080C228 /* ListGroupViewController.swift */,
+			);
+			path = KtGroup;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FE9F1A7221710B200CCEA7C /* KnowTree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FE9F1D0221710B200CCEA7C /* Build configuration list for PBXNativeTarget "KnowTree" */;
+			buildPhases = (
+				3E4C55D90F11BF94C0CF93F7 /* [CP] Check Pods Manifest.lock */,
+				2FE9F1A4221710B200CCEA7C /* Sources */,
+				2FE9F1A5221710B200CCEA7C /* Frameworks */,
+				2FE9F1A6221710B200CCEA7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KnowTree;
+			productName = KnowTree;
+			productReference = 2FE9F1A8221710B200CCEA7C /* KnowTree.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FE9F1BB221710B200CCEA7C /* KnowTreeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FE9F1D3221710B200CCEA7C /* Build configuration list for PBXNativeTarget "KnowTreeTests" */;
+			buildPhases = (
+				9E1A5F084D7CA83F6FFE112B /* [CP] Check Pods Manifest.lock */,
+				2FE9F1B8221710B200CCEA7C /* Sources */,
+				2FE9F1B9221710B200CCEA7C /* Frameworks */,
+				2FE9F1BA221710B200CCEA7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FE9F1BE221710B200CCEA7C /* PBXTargetDependency */,
+			);
+			name = KnowTreeTests;
+			productName = KnowTreeTests;
+			productReference = 2FE9F1BC221710B200CCEA7C /* KnowTreeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2FE9F1C6221710B200CCEA7C /* KnowTreeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FE9F1D6221710B200CCEA7C /* Build configuration list for PBXNativeTarget "KnowTreeUITests" */;
+			buildPhases = (
+				05FC0AE8CDE0C4F41E50F9B6 /* [CP] Check Pods Manifest.lock */,
+				2FE9F1C3221710B200CCEA7C /* Sources */,
+				2FE9F1C4221710B200CCEA7C /* Frameworks */,
+				2FE9F1C5221710B200CCEA7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FE9F1C9221710B200CCEA7C /* PBXTargetDependency */,
+			);
+			name = KnowTreeUITests;
+			productName = KnowTreeUITests;
+			productReference = 2FE9F1C7221710B200CCEA7C /* KnowTreeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FE9F1A0221710B200CCEA7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Toan Tran";
+				TargetAttributes = {
+					2FE9F1A7221710B200CCEA7C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					2FE9F1BB221710B200CCEA7C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2FE9F1A7221710B200CCEA7C;
+					};
+					2FE9F1C6221710B200CCEA7C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2FE9F1A7221710B200CCEA7C;
+					};
+				};
+			};
+			buildConfigurationList = 2FE9F1A3221710B200CCEA7C /* Build configuration list for PBXProject "KnowTree" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FE9F19F221710B200CCEA7C;
+			productRefGroup = 2FE9F1A9221710B200CCEA7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FE9F1A7221710B200CCEA7C /* KnowTree */,
+				2FE9F1BB221710B200CCEA7C /* KnowTreeTests */,
+				2FE9F1C6221710B200CCEA7C /* KnowTreeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FE9F1A6221710B200CCEA7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FE9F1B6221710B200CCEA7C /* LaunchScreen.storyboard in Resources */,
+				2FE9F1B3221710B200CCEA7C /* Assets.xcassets in Resources */,
+				2FE9F1B1221710B200CCEA7C /* Main.storyboard in Resources */,
+				D5A7DDA8225862F80080C228 /* ListGroupTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE9F1BA221710B200CCEA7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE9F1C5221710B200CCEA7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05FC0AE8CDE0C4F41E50F9B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KnowTreeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E4C55D90F11BF94C0CF93F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KnowTree-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E1A5F084D7CA83F6FFE112B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KnowTreeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FE9F1A4221710B200CCEA7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A7DD9D22584B120080C228 /* ListGroupViewController.swift in Sources */,
+				D5A7DD9B22584B120080C228 /* LoginViewController.swift in Sources */,
+				2FDF0C25221EE96E00CF389E /* KtpWebService.swift in Sources */,
+				D5A7DD9C22584B120080C228 /* TabBarController.swift in Sources */,
+				2FE9F1AE221710B200CCEA7C /* ViewController.swift in Sources */,
+				2FE9F1DF221C5A1B00CCEA7C /* DeviceUtils.swift in Sources */,
+				2FD63EDB22257EC80008E16E /* UserAuthDto.swift in Sources */,
+				D5A7DD9A22584B120080C228 /* KtMindMapViewController.swift in Sources */,
+				2F477E092253A73900A124F7 /* ExtentionUViewController.swift in Sources */,
+				2FE9F1AC221710B200CCEA7C /* AppDelegate.swift in Sources */,
+				D5A7DD9922584B120080C228 /* SettingViewController.swift in Sources */,
+				D5A7DDA022584B7A0080C228 /* ListGroupTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE9F1B8221710B200CCEA7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FE9F1C1221710B200CCEA7C /* KnowTreeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE9F1C3221710B200CCEA7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FE9F1CC221710B200CCEA7C /* KnowTreeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FE9F1BE221710B200CCEA7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FE9F1A7221710B200CCEA7C /* KnowTree */;
+			targetProxy = 2FE9F1BD221710B200CCEA7C /* PBXContainerItemProxy */;
+		};
+		2FE9F1C9221710B200CCEA7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FE9F1A7221710B200CCEA7C /* KnowTree */;
+			targetProxy = 2FE9F1C8221710B200CCEA7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2FE9F1AF221710B200CCEA7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FE9F1B0221710B200CCEA7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2FE9F1B4221710B200CCEA7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FE9F1B5221710B200CCEA7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FE9F1CE221710B200CCEA7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FE9F1CF221710B200CCEA7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FE9F1D1221710B200CCEA7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 388524C767491F116CE53202 /* Pods-KnowTree.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJW2Z623E3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KnowTree-Prefix.pch";
+				INFOPLIST_FILE = KnowTree/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UIT.KnowTree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FE9F1D2221710B200CCEA7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59FB098BB51F77A35E55D832 /* Pods-KnowTree.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJW2Z623E3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KnowTree-Prefix.pch";
+				INFOPLIST_FILE = KnowTree/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UIT.KnowTree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2FE9F1D4221710B200CCEA7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C148430B02D341A6AA670010 /* Pods-KnowTreeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJW2Z623E3;
+				INFOPLIST_FILE = KnowTreeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UIT.KnowTreeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnowTree.app/KnowTree";
+			};
+			name = Debug;
+		};
+		2FE9F1D5221710B200CCEA7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11A30773C85632D499FCEAAE /* Pods-KnowTreeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJW2Z623E3;
+				INFOPLIST_FILE = KnowTreeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UIT.KnowTreeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnowTree.app/KnowTree";
+			};
+			name = Release;
+		};
+		2FE9F1D7221710B200CCEA7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1CA1AFB290043C0732E3E03 /* Pods-KnowTreeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJW2Z623E3;
+				INFOPLIST_FILE = KnowTreeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UIT.KnowTreeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KnowTree;
+			};
+			name = Debug;
+		};
+		2FE9F1D8221710B200CCEA7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79A5619AC43C938AAE30D3A7 /* Pods-KnowTreeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJW2Z623E3;
+				INFOPLIST_FILE = KnowTreeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UIT.KnowTreeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KnowTree;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FE9F1A3221710B200CCEA7C /* Build configuration list for PBXProject "KnowTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FE9F1CE221710B200CCEA7C /* Debug */,
+				2FE9F1CF221710B200CCEA7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FE9F1D0221710B200CCEA7C /* Build configuration list for PBXNativeTarget "KnowTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FE9F1D1221710B200CCEA7C /* Debug */,
+				2FE9F1D2221710B200CCEA7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FE9F1D3221710B200CCEA7C /* Build configuration list for PBXNativeTarget "KnowTreeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FE9F1D4221710B200CCEA7C /* Debug */,
+				2FE9F1D5221710B200CCEA7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FE9F1D6221710B200CCEA7C /* Build configuration list for PBXNativeTarget "KnowTreeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FE9F1D7221710B200CCEA7C /* Debug */,
+				2FE9F1D8221710B200CCEA7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FE9F1A0221710B200CCEA7C /* Project object */;
+}

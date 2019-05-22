@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="KnowTree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDK-zc-Z4q">
+                                <rect key="frame" x="168.5" y="318.5" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mDK-zc-Z4q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Sfm-Lp-By3"/>
+                            <constraint firstItem="mDK-zc-Z4q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sx7-tq-DKN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jk0-O4-B0W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="-133"/>
+        </scene>
+        <!--Groups-->
+        <scene sceneID="Vtw-yw-Knf">
+            <objects>
+                <viewController storyboardIdentifier="ListGroupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JPT-Hk-ugd" customClass="ListGroupViewController" customModule="KnowTree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dwn-8d-7rA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ftJ-ru-WOd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SW7-SL-K4s" firstAttribute="trailing" secondItem="ftJ-ru-WOd" secondAttribute="trailing" id="3TT-nV-BpW"/>
+                            <constraint firstItem="ftJ-ru-WOd" firstAttribute="top" secondItem="SW7-SL-K4s" secondAttribute="top" id="Aue-BR-Ja6"/>
+                            <constraint firstItem="SW7-SL-K4s" firstAttribute="bottom" secondItem="ftJ-ru-WOd" secondAttribute="bottom" id="HNB-lw-SYM"/>
+                            <constraint firstItem="ftJ-ru-WOd" firstAttribute="leading" secondItem="SW7-SL-K4s" secondAttribute="leading" id="tGu-T9-a1j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SW7-SL-K4s"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Groups" image="ic_group" id="GoJ-AB-faA"/>
+                    <connections>
+                        <outlet property="tbvListGroup" destination="ftJ-ru-WOd" id="u87-Gx-AuV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fxi-IG-DzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="1391"/>
+        </scene>
+        <!--Nodes-->
+        <scene sceneID="bwJ-KT-l9v">
+            <objects>
+                <viewController storyboardIdentifier="KtMindMapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yo5-ma-305" customClass="KtMindMapViewController" customModule="KnowTree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rKR-Hi-Sjt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nHZ-jd-GgW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Nodes" image="ic_listNode" id="q7y-q5-esc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Usn-hv-dRp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12" y="609"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ULO-cs-Ch9">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1LZ-YF-JBZ" customClass="TabBarController" customModule="KnowTree" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cNv-S2-Qvo"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UYu-hg-ZSt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="yo5-ma-305" kind="relationship" relationship="viewControllers" id="QGG-ZH-ge3"/>
+                        <segue destination="JPT-Hk-ugd" kind="relationship" relationship="viewControllers" id="kel-rU-hn5"/>
+                        <segue destination="ShK-Wb-dib" kind="relationship" relationship="viewControllers" id="ReE-u4-2rb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXT-rZ-esX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-956" y="655"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="2Fs-ft-rCx">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ShK-Wb-dib" customClass="SettingViewController" customModule="KnowTree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bXq-Rg-uzJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YY1-n3-IJa"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="ic_listNode" id="ALT-vR-qnd"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fh0-FG-aRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-970" y="1549"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_group" width="28" height="18"/>
+        <image name="ic_listNode" width="24" height="18"/>
+    </resources>
+</document>
