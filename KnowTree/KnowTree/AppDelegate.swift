@@ -42,11 +42,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     func gotoMainTab() -> Void {
-        let mainTabbar = Utils.getViewController(className: TabBarController.className, storyboard:KTConstants.mainSB);
+        let mainTabbar = Utils.shared.getViewController(className: TabBarController.className, storyboard: KTConstants.mainSB)
         self.window?.rootViewController = mainTabbar;
     }
     func gotoLogin() -> Void {
-        let loginVC = Utils.getViewController(className: LoginViewController.className, storyboard:KTConstants.AuthenticationSB);
+        let loginVC = Utils.shared.getViewController(className: LoginViewController.className, storyboard:KTConstants.AuthenticationSB);
         let navigation = NavAuthentication.init(rootViewController: loginVC);
         self.window?.rootViewController = navigation;
     }

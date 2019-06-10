@@ -11,4 +11,6 @@ import UIKit
 class UserAuthDto: NSObject {
     var userName:String?;
     var password:String?;
+    var email:String?;
+    var emailConfirmed:Bool?;
 }

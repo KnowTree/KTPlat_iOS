@@ -23,6 +23,9 @@ class LoginViewController: UIViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate;
         appDelegate.gotoMainTab();
     }
-    
+    @IBAction func signUpPress(sender:UIButton){
+        let signupVC = Utils.shared.getViewController(className: SignUpVC.className, storyboard:KTConstants.AuthenticationSB);
+        self.navigationController?.pushViewController(signupVC, animated: true);
+    }
 }
 

@@ -19,16 +19,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfD-64-0Rv">
-                                <rect key="frame" x="188" y="433" width="38" height="30"/>
-                                <state key="normal" title="Login"/>
+                                <rect key="frame" x="40" y="423" width="334" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Zor-nM-X2x"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="loginPressWithSender:" destination="snn-WV-9iB" eventType="touchUpInside" id="g2Q-LR-N84"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drE-Og-VG8">
+                                <rect key="frame" x="40" y="483" width="334" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8CV-fa-QFl"/>
+                                </constraints>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpPressWithSender:" destination="snn-WV-9iB" eventType="touchUpInside" id="GRq-8o-H7v"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FfD-64-0Rv" firstAttribute="centerX" secondItem="fq0-93-Bd2" secondAttribute="centerX" id="d2F-Gv-yBA"/>
+                            <constraint firstItem="FfD-64-0Rv" firstAttribute="leading" secondItem="0U5-ot-LHT" secondAttribute="leading" constant="40" id="33a-Ku-6UT"/>
+                            <constraint firstItem="0U5-ot-LHT" firstAttribute="trailing" secondItem="FfD-64-0Rv" secondAttribute="trailing" constant="40" id="4Ft-L2-AtY"/>
+                            <constraint firstItem="drE-Og-VG8" firstAttribute="leading" secondItem="0U5-ot-LHT" secondAttribute="leading" constant="40" id="OIZ-0j-uzS"/>
+                            <constraint firstItem="drE-Og-VG8" firstAttribute="top" secondItem="FfD-64-0Rv" secondAttribute="bottom" constant="10" id="hLw-Rt-9Hs"/>
+                            <constraint firstItem="0U5-ot-LHT" firstAttribute="trailing" secondItem="drE-Og-VG8" secondAttribute="trailing" constant="40" id="o9p-Wq-AfQ"/>
                             <constraint firstItem="FfD-64-0Rv" firstAttribute="centerY" secondItem="fq0-93-Bd2" secondAttribute="centerY" id="y6V-0s-dBK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0U5-ot-LHT"/>
@@ -38,6 +61,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLi-fw-zfM" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="868.11594202898561" y="-133.25892857142856"/>
+        </scene>
+        <!--Sign UpVC-->
+        <scene sceneID="yu0-Sh-W4j">
+            <objects>
+                <viewController storyboardIdentifier="SignUpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fp5-UB-0lo" customClass="SignUpVC" customModule="KnowTree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ejc-Pe-LH1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7H8-qM-B4c"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64l-4O-m8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1649" y="-133"/>
         </scene>
         <!--Nav Authentication-->
         <scene sceneID="OT2-jJ-Ew6">

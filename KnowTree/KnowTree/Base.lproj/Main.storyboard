@@ -84,7 +84,20 @@
                     <view key="view" contentMode="scaleToFill" id="bXq-Rg-uzJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDQ-8Y-yjZ">
+                                <rect key="frame" x="163.5" y="318.5" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutPressWithSender:" destination="ShK-Wb-dib" eventType="touchUpInside" id="0bK-E3-0aB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wDQ-8Y-yjZ" firstAttribute="centerY" secondItem="bXq-Rg-uzJ" secondAttribute="centerY" id="6Jx-Dv-dI7"/>
+                            <constraint firstItem="wDQ-8Y-yjZ" firstAttribute="centerX" secondItem="bXq-Rg-uzJ" secondAttribute="centerX" id="Gsu-sw-rTj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YY1-n3-IJa"/>
                     </view>
                     <toolbarItems/>

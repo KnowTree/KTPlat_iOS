@@ -9,7 +9,9 @@
 import UIKit
 
 class Utils: NSObject {
-    static func getViewController(className: String, storyboard:String)-> UIViewController {
+    static let shared = Utils();
+    private override init(){};
+    func getViewController(className: String, storyboard:String)-> UIViewController {
         let storyboard = UIStoryboard(name: storyboard, bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier:className)
         return controller;
