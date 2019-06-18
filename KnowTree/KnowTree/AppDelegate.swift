@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     func gotoLogin() -> Void {
         let loginVC = Utils.shared.getViewController(className: LoginViewController.className, storyboard:KTConstants.AuthenticationSB);
-        let navigation = NavAuthentication.init(rootViewController: loginVC);
+        let navigation = UINavigationController.init(rootViewController: loginVC);
         self.window?.rootViewController = navigation;
     }
 

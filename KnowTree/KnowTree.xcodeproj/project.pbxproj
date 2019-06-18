@@ -18,14 +18,12 @@
 		2FE9F1B6221710B200CCEA7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE9F1B4221710B200CCEA7C /* LaunchScreen.storyboard */; };
 		2FE9F1C1221710B200CCEA7C /* KnowTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE9F1C0221710B200CCEA7C /* KnowTreeTests.swift */; };
 		2FE9F1CC221710B200CCEA7C /* KnowTreeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE9F1CB221710B200CCEA7C /* KnowTreeUITests.swift */; };
-		2FE9F1DF221C5A1B00CCEA7C /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE9F1DE221C5A1B00CCEA7C /* DeviceUtils.swift */; };
 		40135027D97A68AF1BCC5760 /* Pods_KnowTreeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1E2564D958422F490E6805 /* Pods_KnowTreeTests.framework */; };
 		B672FF44BEB06A4DB75209C2 /* Pods_KnowTreeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F222F7F1BA34F9233FABC6 /* Pods_KnowTreeUITests.framework */; };
 		D502A0A822AE3ED600A4F69A /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D502A0A722AE3ED600A4F69A /* SignUpVC.swift */; };
 		D538908D2294F006008AA7F4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D538908C2294F006008AA7F4 /* Utils.swift */; };
 		D53890902294F15F008AA7F4 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D538908F2294F15F008AA7F4 /* Authentication.storyboard */; };
 		D53890922294F37F008AA7F4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53890912294F37F008AA7F4 /* Constant.swift */; };
-		D53890942294F463008AA7F4 /* NavAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53890932294F463008AA7F4 /* NavAuthentication.swift */; };
 		D5A7DD9922584B120080C228 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A7DD9022584B120080C228 /* SettingViewController.swift */; };
 		D5A7DD9A22584B120080C228 /* KtMindMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A7DD9222584B120080C228 /* KtMindMapViewController.swift */; };
 		D5A7DD9B22584B120080C228 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A7DD9422584B120080C228 /* LoginViewController.swift */; };
@@ -71,7 +69,6 @@
 		2FE9F1C7221710B200CCEA7C /* KnowTreeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowTreeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE9F1CB221710B200CCEA7C /* KnowTreeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowTreeUITests.swift; sourceTree = "<group>"; };
 		2FE9F1CD221710B200CCEA7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FE9F1DE221C5A1B00CCEA7C /* DeviceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtils.swift; sourceTree = "<group>"; };
 		388524C767491F116CE53202 /* Pods-KnowTree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowTree.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowTree/Pods-KnowTree.debug.xcconfig"; sourceTree = "<group>"; };
 		59FB098BB51F77A35E55D832 /* Pods-KnowTree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowTree.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowTree/Pods-KnowTree.release.xcconfig"; sourceTree = "<group>"; };
 		79A5619AC43C938AAE30D3A7 /* Pods-KnowTreeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowTreeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowTreeUITests/Pods-KnowTreeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,7 +79,6 @@
 		D538908C2294F006008AA7F4 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D538908F2294F15F008AA7F4 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		D53890912294F37F008AA7F4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		D53890932294F463008AA7F4 /* NavAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavAuthentication.swift; sourceTree = "<group>"; };
 		D59E154B224889DF00F21D10 /* KnowTree-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KnowTree-Prefix.pch"; sourceTree = "<group>"; };
 		D5A7DD9022584B120080C228 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		D5A7DD9222584B120080C228 /* KtMindMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KtMindMapViewController.swift; sourceTree = "<group>"; };
@@ -224,7 +220,6 @@
 		2FE9F1DD221C5A0800CCEA7C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				2FE9F1DE221C5A1B00CCEA7C /* DeviceUtils.swift */,
 				D538908C2294F006008AA7F4 /* Utils.swift */,
 			);
 			path = Utils;
@@ -290,7 +285,6 @@
 			children = (
 				D502A0A622AE3EB500A4F69A /* SignUpVC */,
 				D5A7DD9422584B120080C228 /* LoginViewController.swift */,
-				D53890932294F463008AA7F4 /* NavAuthentication.swift */,
 			);
 			path = KtLogin;
 			sourceTree = "<group>";
@@ -512,9 +506,7 @@
 				2FDF0C25221EE96E00CF389E /* KtpWebService.swift in Sources */,
 				D5A7DD9C22584B120080C228 /* TabBarController.swift in Sources */,
 				2FE9F1AE221710B200CCEA7C /* ViewController.swift in Sources */,
-				D53890942294F463008AA7F4 /* NavAuthentication.swift in Sources */,
 				D538908D2294F006008AA7F4 /* Utils.swift in Sources */,
-				2FE9F1DF221C5A1B00CCEA7C /* DeviceUtils.swift in Sources */,
 				D502A0A822AE3ED600A4F69A /* SignUpVC.swift in Sources */,
 				D53890922294F37F008AA7F4 /* Constant.swift in Sources */,
 				2FD63EDB22257EC80008E16E /* UserAuthDto.swift in Sources */,
