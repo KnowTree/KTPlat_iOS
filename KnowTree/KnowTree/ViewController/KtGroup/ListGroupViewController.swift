@@ -45,9 +45,17 @@ class ListGroupViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(
-        withIdentifier: "ListGroupTableViewCell", for: indexPath) as! ListGroupTableViewCell;
-       cell.lblTitle?.text = listGroup?[indexPath.row] as? String;
+            withIdentifier: "ListGroupTableViewCell", for: indexPath) as! ListGroupTableViewCell;
+        cell.lblTitle?.text = listGroup?[indexPath.row] as? String;
         return cell;
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60;
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = Utils.shared.getViewController(className: "GroupDetailVC", storyboard:KTConstants.GroupSB);
+        self.navigationController?.pushViewController(vc, animated: true);
     }
 
 }

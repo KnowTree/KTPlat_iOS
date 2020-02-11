@@ -12,4 +12,5 @@ struct KTConstants {
     //storyboard
     static let mainSB = "Main";
     static let AuthenticationSB = "Authentication";
+    static let GroupSB = "GroupSB";
 }

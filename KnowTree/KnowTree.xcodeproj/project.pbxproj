@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0B6B0A7886A56B0CBA5BE8D8 /* Pods_KnowTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B929859BDF07AFBA7F7E2D /* Pods_KnowTree.framework */; };
 		2F477E092253A73900A124F7 /* ExtentionUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F477E082253A73900A124F7 /* ExtentionUViewController.swift */; };
+		2FBCA2B223F2F49E00ED9B2B /* GroupDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBCA2B123F2F49E00ED9B2B /* GroupDetailVC.swift */; };
+		2FBCA2B423F2F4C200ED9B2B /* GroupSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FBCA2B323F2F4C200ED9B2B /* GroupSB.storyboard */; };
 		2FD63EDB22257EC80008E16E /* UserAuthDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD63EDA22257EC80008E16E /* UserAuthDto.swift */; };
 		2FDF0C25221EE96E00CF389E /* KtpWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF0C24221EE96E00CF389E /* KtpWebService.swift */; };
 		2FE9F1AC221710B200CCEA7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE9F1AB221710B200CCEA7C /* AppDelegate.swift */; };
@@ -54,6 +56,8 @@
 		00B929859BDF07AFBA7F7E2D /* Pods_KnowTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnowTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A30773C85632D499FCEAAE /* Pods-KnowTreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowTreeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowTreeTests/Pods-KnowTreeTests.release.xcconfig"; sourceTree = "<group>"; };
 		2F477E082253A73900A124F7 /* ExtentionUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionUViewController.swift; sourceTree = "<group>"; };
+		2FBCA2B123F2F49E00ED9B2B /* GroupDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailVC.swift; sourceTree = "<group>"; };
+		2FBCA2B323F2F4C200ED9B2B /* GroupSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GroupSB.storyboard; sourceTree = "<group>"; };
 		2FD63EDA22257EC80008E16E /* UserAuthDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthDto.swift; sourceTree = "<group>"; };
 		2FDF0C24221EE96E00CF389E /* KtpWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KtpWebService.swift; sourceTree = "<group>"; };
 		2FE9F1A8221710B200CCEA7C /* KnowTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +186,7 @@
 				D5A7DD8E22584B120080C228 /* ViewController */,
 				2FE9F1AB221710B200CCEA7C /* AppDelegate.swift */,
 				2FE9F1AD221710B200CCEA7C /* ViewController.swift */,
+				2FBCA2B323F2F4C200ED9B2B /* GroupSB.storyboard */,
 				2FE9F1AF221710B200CCEA7C /* Main.storyboard */,
 				D538908F2294F15F008AA7F4 /* Authentication.storyboard */,
 				2FE9F1B2221710B200CCEA7C /* Assets.xcassets */,
@@ -301,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				D5A7DD9822584B120080C228 /* ListGroupViewController.swift */,
+				2FBCA2B123F2F49E00ED9B2B /* GroupDetailVC.swift */,
 			);
 			path = KtGroup;
 			sourceTree = "<group>";
@@ -418,6 +424,7 @@
 				2FE9F1B6221710B200CCEA7C /* LaunchScreen.storyboard in Resources */,
 				2FE9F1B3221710B200CCEA7C /* Assets.xcassets in Resources */,
 				2FE9F1B1221710B200CCEA7C /* Main.storyboard in Resources */,
+				2FBCA2B423F2F4C200ED9B2B /* GroupSB.storyboard in Resources */,
 				D5A7DDA8225862F80080C228 /* ListGroupTableViewCell.xib in Resources */,
 				D53890902294F15F008AA7F4 /* Authentication.storyboard in Resources */,
 			);
@@ -507,6 +514,7 @@
 				D5A7DD9C22584B120080C228 /* TabBarController.swift in Sources */,
 				2FE9F1AE221710B200CCEA7C /* ViewController.swift in Sources */,
 				D538908D2294F006008AA7F4 /* Utils.swift in Sources */,
+				2FBCA2B223F2F49E00ED9B2B /* GroupDetailVC.swift in Sources */,
 				D502A0A822AE3ED600A4F69A /* SignUpVC.swift in Sources */,
 				D53890922294F37F008AA7F4 /* Constant.swift in Sources */,
 				2FD63EDB22257EC80008E16E /* UserAuthDto.swift in Sources */,
