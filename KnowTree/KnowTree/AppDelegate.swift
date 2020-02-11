@@ -43,14 +43,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     func gotoMainTab() -> Void {
         let mainTabbar:TabBarController;
-        mainTabbar = Utils.shared.getViewController(className: TabBarController.className, storyboard: KTConstants.mainSB) as! TabBarController;
-        let settingVC = Utils.shared.getViewController(className: SettingViewController.className, storyboard: KTConstants.mainSB);
-        let minMapVC = Utils.shared.getViewController(className: KtMindMapViewController.className, storyboard: KTConstants.mainSB);
-        let listGroupVC = Utils.shared.getViewController(className: ListGroupViewController.className, storyboard: KTConstants.mainSB);
-        mainTabbar.viewControllers = [minMapVC, listGroupVC, settingVC];
-        let navMain = UINavigationController.init(rootViewController: mainTabbar);
         
-        self.window?.rootViewController = navMain;
+        mainTabbar = Utils.shared.getViewController(className: TabBarController.className, storyboard: KTConstants.mainSB) as! TabBarController;
+        
+        let settingVC = Utils.shared.getViewController(className: SettingViewController.className, storyboard: KTConstants.mainSB);
+        let navSetting = UINavigationController.init(rootViewController: settingVC);
+        
+        let minMapVC = Utils.shared.getViewController(className: KtMindMapViewController.className, storyboard: KTConstants.mainSB);
+        let navMinMap = UINavigationController.init(rootViewController: minMapVC);
+        
+        let listGroupVC = Utils.shared.getViewController(className: ListGroupViewController.className, storyboard: KTConstants.mainSB);
+        let navGroup = UINavigationController.init(rootViewController: listGroupVC)
+        mainTabbar.viewControllers = [navGroup, navMinMap, navSetting];
+        
+        self.window?.rootViewController = mainTabbar;
     }
     func gotoLogin() -> Void {
         let loginVC = Utils.shared.getViewController(className: LoginViewController.className, storyboard:KTConstants.AuthenticationSB);
